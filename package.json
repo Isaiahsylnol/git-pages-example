@@ -2,14 +2,16 @@
   "name": "git-pages-example",
   "version": "0.0.1",
   "author": "Ionic Framework",
-  "homepage": "https://ionicframework.com/",
+  "homepage": "https://isaiahsylnol.github.io/git-pages-example",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "lint": "ng lint"
+    "lint": "ng lint",
+    "predeploy": "npm run build",
+ "deploy": "gh-pages -d build"
   },
   "private": true,
   "dependencies": {
@@ -27,6 +29,7 @@
     "@capacitor/keyboard": "6.0.0",
     "@capacitor/status-bar": "6.0.0",
     "@ionic/angular": "^8.0.0",
+    "angular-cli-ghpages": "^2.0.0-beta.2",
     "ionicons": "^7.0.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
